@@ -1,101 +1,463 @@
-import Image from "next/image";
 
-export default function Home() {
+
+'use client';
+import { useState } from 'react';
+import React from 'react'
+import Image from 'next/image';
+import WordSlider from './components/wordslider';
+const page = () => {
+  const [isSearchFocused, setIsSearchFocused] = useState(false);
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
+    <>
+      <section className='overflow-hidden'>
+        <div className='container-fluid'>
+          <div className='row'>
+            <div className='col-md-12'>
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+              <div className='row justify-center bg-[#FF6A00]'>
+                <div className='col-md-6'>
+                  <p className='text-center p-0 m-0 py-2 text-[#fff] text-[16px] font-[rhd]'>Get 50% Off on Selected Item | Shop Now </p>
+                </div>
+              </div>
+
+              <div className='col-md-12 px-20 flex justify-between '>
+                <div className='col-md-2 flex items-center'>
+                  <div>
+                    <Image
+                      src="/assets/images/image 2.svg"
+                      alt='..'
+                      width={158}
+                      height={20}
+                    />
+                  </div>
+                </div>
+
+                <div className="col-md-8">
+                  <div className="flex items-center justify-between px-4 py-2 ">
+                    {/* Home Links */}
+                    <div
+                      className={`transition-all duration-300 ${isSearchFocused ? 'col-md-2' : 'col-md-6'
+                        } flex items-center justify-between px-4 space-x-4`}
+                    >
+                      {!isSearchFocused && (
+                        <>
+                          <span className="text-[16px] font-[rhd] font-[400] text-gray-700 cursor-pointer">Home</span>
+                          <span className="text-[16px] font-[rhd] font-[400] text-gray-700 cursor-pointer">Shop</span>
+                          <span className="text-[16px] font-[rhd] font-[400] text-gray-700 cursor-pointer">Contact</span>
+                          <span className="text-[16px] font-[rhd] font-[400] text-gray-700 cursor-pointer">Categories</span>
+                        </>
+                      )}
+                      {isSearchFocused && (
+                        <span className="text-[16px] font-[rhd] font-[400] text-gray-700 cursor-pointer">Home</span>
+                      )}
+                    </div>
+
+                    {/* Search Input */}
+                    <div
+                      className={`relative flex items-center transition-all duration-300 ${isSearchFocused ? 'col-md-10' : 'col-md-6'
+                        }`}
+                    >
+                      <input
+                        type="text"
+                        placeholder="Search"
+                        className="border rounded-full py-2 px-4 w-full focus:outline-none "
+                        onFocus={() => setIsSearchFocused(true)}
+                        onBlur={() => setIsSearchFocused(false)}
+                      />
+                    </div>
+                  </div>
+                </div>
+
+                <div className='col-md-2 flex items-center justify-end gap-5 '>
+                  <div className='flex gap-2'>
+                    <Image
+                      src="/assets/images/Vector.svg"
+                      alt='..'
+                      width={16}
+                      height={20}
+                    />
+                    <p className='text-[16px] font-[rhd] font-[400] m-0 p-0'>my account</p>
+                  </div>
+                  <div className='flex gap-2'>
+                    <Image
+                      src="/assets/images/Vector (1).svg"
+                      alt='..'
+                      width={20}
+                      height={20}
+                    />
+                    <p className='text-[16px] font-[rhd] font-[400] m-0 p-0'>Cart</p>
+                  </div>
+                </div>
+              </div>
+
+              <div className='row bg-[#131F81]'>
+                <div className='col-md-6 flex justify-center items-center'>
+                  <div className='col-md-10'>
+                    <div className='py-4'>
+
+                      <button className='w-[155px] font-[rhd]  hover:bg-[#131F81] hover:text-[#fff] h-[40px] border text-[#131F81] text-[18px] rounded-[50px] bg-[#fff]'>Global Reach</button>
+                    </div>
+                    <p className='text-[62px] font-[600] text-[#fff] font-[lf] leading-[78px]'>Become a Seller and Start Earning Today!</p>
+                    <p className='text-[18px] font-[400] text-[#fff] font-[rhd] leading-[26px]'>Are you ready to turn your passion into profit? Whether you're an artist, entrepreneur, or small business owner, our platform offers everything you need to grow your business and reach millions of customers worldwide.</p>
+
+                    <div className='flex gap-5'>
+                      <button className='w-[155px] font-[rhd] hover:bg-[#131F81] hover:text-[#fff] h-[40px] border text-[#131F81] text-[18px] rounded-[10px] bg-[#fff]'>Get in Touch</button>
+                      <button className='w-[180px] font-[rhd] hover:bg-[#131F81] hover:text-[#fff] h-[40px] border text-[#131F81] text-[18px] rounded-[10px] bg-[#fff]'>Browse Services</button>
+                    </div>
+                  </div>
+                </div>
+                <div className='col-md-6 flex justify-center'>
+                  <div className="colmd-10">
+                    <Image
+                      src="/assets/images/10307453_4435885 1.svg"
+                      alt='...'
+                      width={650}
+                      height={10} />
+                  </div>
+                </div>
+              </div>
+
+
+              <div className='col-md-12 flex justify-center'>
+                <div className='col-md-8'>
+                  <div className='col-md-12 pt-[70px] pb-4'>
+                    <div className='col-md-12 '>
+                      <p className='text-[62px] font-[lf] font-[700] text-center'>Meet Our <span className='text-[#ff725e]'>Customers</span> </p>
+                    </div>
+                    <div className='col-md-10 flex'>
+                      <div className='col-md-8'></div>
+                      <div className='col-md-4 p-0 m-0'>
+                        <Image src="/assets/images/Group 10.svg"
+                          alt='...'
+                          width={216}
+                          height={10} />
+                      </div>
+
+                    </div>
+
+                  </div>
+                  <div className='col-md-12 flex flex-wrap py-5'>
+                    <div className='col-md-3 py-5 px-5 flex justify-center border-r border-b'>
+                      <Image
+                        src="/assets/images/image 3.svg"
+                        alt='..'
+                        width={188}
+                        height={20}
+                        className=''
+                      />
+                    </div>
+                    <div className='col-md-3 py-5 px-5 flex justify-center border-r border-b'>
+                      <Image
+                        src="/assets/images/image 4.svg"
+                        alt='..'
+                        width={188}
+                        height={20}
+                        className=''
+                      />
+                    </div>
+                    <div className='col-md-3 py-5 px-5 flex justify-center border-r border-b'>
+                      <Image
+                        src="/assets/images/image 5.svg"
+                        alt='..'
+                        width={188}
+                        height={20}
+                        className=''
+                      />
+                    </div>
+                    <div className='col-md-3 py-5 px-5 flex justify-center border-b'>
+                      <Image
+                        src="/assets/images/image 6.svg"
+                        alt='..'
+                        width={188}
+                        height={20}
+                        className=''
+                      />
+                    </div>
+                    <div className='col-md-3 py-5 px-5 flex justify-center border-r'>
+                      <Image
+                        src="/assets/images/image 7.svg"
+                        alt='..'
+                        width={188}
+                        height={20}
+                        className=''
+                      />
+                    </div>
+                    <div className='col-md-3 py-5 px-5 flex justify-center border-r'>
+                      <Image
+                        src="/assets/images/image 8.svg"
+                        alt='..'
+                        width={188}
+                        height={20}
+                        className=''
+                      />
+                    </div>
+                    <div className='col-md-3 py-5 px-5 flex justify-center border-r'>
+                      <Image
+                        src="/assets/images/image 9.svg"
+                        alt='..'
+                        width={188}
+                        height={20}
+                        className=''
+                      />
+                    </div>
+                    <div className='col-md-3 py-5 px-5 flex justify-center'>
+                      <Image
+                        src="/assets/images/image 10.svg"
+                        alt='..'
+                        width={188}
+                        height={20}
+                        className=''
+                      />
+                    </div>
+
+
+                  </div>
+                </div>
+              </div>
+
+
+              <div className='col-md-12 flex justify-center pb-5'>
+                <div className="col-md-12">
+                  <div className='col-md-12 pt-[100px]'>
+                    <div className='col-md-12  pb-5'>
+                      <p className='text-[62px] font-[lf] font-[700] text-center'>What’s Coming <span className='text-[#ff725e]'> Next?</span> </p>
+                    </div>
+
+                    <div className='col-md-12 flex justify-center'>
+                      <div className='col-md-12 flex flex-wrap'>
+                        <div className='col-md-3 mb-4'>
+                          <div className='col-md-12 flex justify-center mb-4'>
+
+                            <Image
+                              src="/assets/images/Rectangle 9.svg"
+                              alt='..'
+                              width={300}
+                              height={20}
+                              className=''
+                            />
+                          </div>
+                          <div className='text-center px-5'>
+                            <p className='text-[24px] font-[800] font-[rhd] leading-[25px]'>Noise Colorfit Icon 2 1.8''</p>
+                            <p className='px-5 text-[18px] font-[400] font-[rhd] leading-[25px]'>AI Voice Assistant Smartwatch  (Deep Wine Strap, Regular)</p>
+                            <p className='text-[23px] font-[800] font-[rhd] leading-[25px]'> ₹1,399 <span className='text-[15px] text-[#00000085] font-[400] font-[rhd] '> ₹5,999</span> <span className='text-[#FF6A00] font-[400] text-[15px]'>70% Off</span> </p>
+                          </div>
+                        </div>
+                        <div className='col-md-3 mb-4'>
+                          <div className='col-md-12 flex justify-center mb-4'>
+
+                            <Image
+                              src="/assets/images/Rectangle 9.svg"
+                              alt='..'
+                              width={300}
+                              height={20}
+                              className=''
+                            />
+                          </div>
+                          <div className='text-center px-5'>
+                            <p className='text-[24px] font-[800] font-[rhd] leading-[25px]'>Noise Colorfit Icon 2 1.8''</p>
+                            <p className='px-5 text-[18px] font-[400] font-[rhd] leading-[25px]'>AI Voice Assistant Smartwatch  (Deep Wine Strap, Regular)</p>
+                            <p className='text-[23px] font-[800] font-[rhd] leading-[25px]'> ₹1,399 <span className='text-[15px] text-[#00000085] font-[400] font-[rhd] '> ₹5,999</span> <span className='text-[#FF6A00] font-[400] text-[15px]'>70% Off</span> </p>
+                          </div>
+                        </div>
+
+                        <div className='col-md-3 mb-4'>
+                          <div className='col-md-12 flex justify-center mb-4'>
+
+                            <Image
+                              src="/assets/images/Rectangle 9.svg"
+                              alt='..'
+                              width={300}
+                              height={20}
+                              className=''
+                            />
+                          </div>
+                          <div className='text-center px-5'>
+                            <p className='text-[24px] font-[800] font-[rhd] leading-[25px]'>Noise Colorfit Icon 2 1.8''</p>
+                            <p className='px-5 text-[18px] font-[400] font-[rhd] leading-[25px]'>AI Voice Assistant Smartwatch  (Deep Wine Strap, Regular)</p>
+                            <p className='text-[23px] font-[800] font-[rhd] leading-[25px]'> ₹1,399 <span className='text-[15px] text-[#00000085] font-[400] font-[rhd] '> ₹5,999</span> <span className='text-[#FF6A00] font-[400] text-[15px]'>70% Off</span> </p>
+                          </div>
+                        </div>
+
+                        <div className='col-md-3 mb-4'>
+                          <div className='col-md-12 flex justify-center mb-4'>
+
+                            <Image
+                              src="/assets/images/Rectangle 9.svg"
+                              alt='..'
+                              width={300}
+                              height={20}
+                              className=''
+                            />
+                          </div>
+                          <div className='text-center px-5'>
+                            <p className='text-[24px] font-[800] font-[rhd] leading-[25px]'>Noise Colorfit Icon 2 1.8''</p>
+                            <p className='px-5 text-[18px] font-[400] font-[rhd] leading-[25px]'>AI Voice Assistant Smartwatch  (Deep Wine Strap, Regular)</p>
+                            <p className='text-[23px] font-[800] font-[rhd] leading-[25px]'> ₹1,399 <span className='text-[15px] text-[#00000085] font-[400] font-[rhd] '> ₹5,999</span> <span className='text-[#FF6A00] font-[400] text-[15px]'>70% Off</span> </p>
+                          </div>
+                        </div>
+
+                        <div className='col-md-3 mb-4'>
+                          <div className='col-md-12 flex justify-center mb-4'>
+
+                            <Image
+                              src="/assets/images/Rectangle 9.svg"
+                              alt='..'
+                              width={300}
+                              height={20}
+                              className=''
+                            />
+                          </div>
+                          <div className='text-center px-5'>
+                            <p className='text-[24px] font-[800] font-[rhd] leading-[25px]'>Noise Colorfit Icon 2 1.8''</p>
+                            <p className='px-5 text-[18px] font-[400] font-[rhd] leading-[25px]'>AI Voice Assistant Smartwatch  (Deep Wine Strap, Regular)</p>
+                            <p className='text-[23px] font-[800] font-[rhd] leading-[25px]'> ₹1,399 <span className='text-[15px] text-[#00000085] font-[400] font-[rhd] '> ₹5,999</span> <span className='text-[#FF6A00] font-[400] text-[15px]'>70% Off</span> </p>
+                          </div>
+                        </div>
+
+                        <div className='col-md-3 mb-4'>
+                          <div className='col-md-12 flex justify-center mb-4'>
+
+                            <Image
+                              src="/assets/images/Rectangle 9.svg"
+                              alt='..'
+                              width={300}
+                              height={20}
+                              className=''
+                            />
+                          </div>
+                          <div className='text-center px-5'>
+                            <p className='text-[24px] font-[800] font-[rhd] leading-[25px]'>Noise Colorfit Icon 2 1.8''</p>
+                            <p className='px-5 text-[18px] font-[400] font-[rhd] leading-[25px]'>AI Voice Assistant Smartwatch  (Deep Wine Strap, Regular)</p>
+                            <p className='text-[23px] font-[800] font-[rhd] leading-[25px]'> ₹1,399 <span className='text-[15px] text-[#00000085] font-[400] font-[rhd] '> ₹5,999</span> <span className='text-[#FF6A00] font-[400] text-[15px]'>70% Off</span> </p>
+                          </div>
+                        </div>
+
+                        <div className='col-md-3 mb-4'>
+                          <div className='col-md-12 flex justify-center mb-4'>
+
+                            <Image
+                              src="/assets/images/Rectangle 9.svg"
+                              alt='..'
+                              width={300}
+                              height={20}
+                              className=''
+                            />
+                          </div>
+                          <div className='text-center px-5'>
+                            <p className='text-[24px] font-[800] font-[rhd] leading-[25px]'>Noise Colorfit Icon 2 1.8''</p>
+                            <p className='px-5 text-[18px] font-[400] font-[rhd] leading-[25px]'>AI Voice Assistant Smartwatch  (Deep Wine Strap, Regular)</p>
+                            <p className='text-[23px] font-[800] font-[rhd] leading-[25px]'> ₹1,399 <span className='text-[15px] text-[#00000085] font-[400] font-[rhd] '> ₹5,999</span> <span className='text-[#FF6A00] font-[400] text-[15px]'>70% Off</span> </p>
+                          </div>
+                        </div>
+
+                        <div className='col-md-3 mb-4'>
+                          <div className='col-md-12 flex justify-center mb-4'>
+
+                            <Image
+                              src="/assets/images/Rectangle 9.svg"
+                              alt='..'
+                              width={300}
+                              height={20}
+                              className=''
+                            />
+                          </div>
+                          <div className='text-center px-5'>
+                            <p className='text-[24px] font-[800] font-[rhd] leading-[25px]'>Noise Colorfit Icon 2 1.8''</p>
+                            <p className='px-5 text-[18px] font-[400] font-[rhd] leading-[25px]'>AI Voice Assistant Smartwatch  (Deep Wine Strap, Regular)</p>
+                            <p className='text-[23px] font-[800] font-[rhd] leading-[25px]'> ₹1,399 <span className='text-[15px] text-[#00000085] font-[400] font-[rhd] '> ₹5,999</span> <span className='text-[#FF6A00] font-[400] text-[15px]'>70% Off</span> </p>
+                          </div>
+                        </div>
+
+                        <div className='col-md-3 mb-4'>
+                          <div className='col-md-12 flex justify-center mb-4'>
+
+                            <Image
+                              src="/assets/images/Rectangle 9.svg"
+                              alt='..'
+                              width={300}
+                              height={20}
+                              className=''
+                            />
+                          </div>
+                          <div className='text-center px-5'>
+                            <p className='text-[24px] font-[800] font-[rhd] leading-[25px]'>Noise Colorfit Icon 2 1.8''</p>
+                            <p className='px-5 text-[18px] font-[400] font-[rhd] leading-[25px]'>AI Voice Assistant Smartwatch  (Deep Wine Strap, Regular)</p>
+                            <p className='text-[23px] font-[800] font-[rhd] leading-[25px]'> ₹1,399 <span className='text-[15px] text-[#00000085] font-[400] font-[rhd] '> ₹5,999</span> <span className='text-[#FF6A00] font-[400] text-[15px]'>70% Off</span> </p>
+                          </div>
+                        </div>
+
+                        <div className='col-md-3 mb-4'>
+                          <div className='col-md-12 flex justify-center mb-4'>
+
+                            <Image
+                              src="/assets/images/Rectangle 9.svg"
+                              alt='..'
+                              width={300}
+                              height={20}
+                              className=''
+                            />
+                          </div>
+                          <div className='text-center px-5'>
+                            <p className='text-[24px] font-[800] font-[rhd] leading-[25px]'>Noise Colorfit Icon 2 1.8''</p>
+                            <p className='px-5 text-[18px] font-[400] font-[rhd] leading-[25px]'>AI Voice Assistant Smartwatch  (Deep Wine Strap, Regular)</p>
+                            <p className='text-[23px] font-[800] font-[rhd] leading-[25px]'> ₹1,399 <span className='text-[15px] text-[#00000085] font-[400] font-[rhd] '> ₹5,999</span> <span className='text-[#FF6A00] font-[400] text-[15px]'>70% Off</span> </p>
+                          </div>
+                        </div>
+
+                        <div className='col-md-3 mb-4'>
+                          <div className='col-md-12 flex justify-center mb-4'>
+
+                            <Image
+                              src="/assets/images/Rectangle 9.svg"
+                              alt='..'
+                              width={300}
+                              height={20}
+                              className=''
+                            />
+                          </div>
+                          <div className='text-center px-5'>
+                            <p className='text-[24px] font-[800] font-[rhd] leading-[25px]'>Noise Colorfit Icon 2 1.8''</p>
+                            <p className='px-5 text-[18px] font-[400] font-[rhd] leading-[25px]'>AI Voice Assistant Smartwatch  (Deep Wine Strap, Regular)</p>
+                            <p className='text-[23px] font-[800] font-[rhd] leading-[25px]'> ₹1,399 <span className='text-[15px] text-[#00000085] font-[400] font-[rhd] '> ₹5,999</span> <span className='text-[#FF6A00] font-[400] text-[15px]'>70% Off</span> </p>
+                          </div>
+                        </div>
+
+                        <div className='col-md-3 mb-4'>
+                          <div className='col-md-12 flex justify-center mb-4'>
+
+                            <Image
+                              src="/assets/images/Rectangle 9.svg"
+                              alt='..'
+                              width={300}
+                              height={20}
+                              className=''
+                            />
+                          </div>
+                          <div className='text-center px-5'>
+                            <p className='text-[24px] font-[800] font-[rhd] leading-[25px]'>Noise Colorfit Icon 2 1.8''</p>
+                            <p className='px-5 text-[18px] font-[400] font-[rhd] leading-[25px]'>AI Voice Assistant Smartwatch  (Deep Wine Strap, Regular)</p>
+                            <p className='text-[23px] font-[800] font-[rhd] leading-[25px]'> ₹1,399 <span className='text-[15px] text-[#00000085] font-[400] font-[rhd] '> ₹5,999</span> <span className='text-[#FF6A00] font-[400] text-[15px]'>70% Off</span> </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+
+<div className='col-md-12'>
+<WordSlider/>
+</div>
+
+            </div>
+
+          </div>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
-    </div>
-  );
+
+      </section>
+    </>
+  )
 }
+
+export default page
