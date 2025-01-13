@@ -3,6 +3,7 @@
 import React from 'react'
 import Image from 'next/image';
 import WordSlider from './components/wordslider';
+import Footer from './components/footer';
 import Header from './components/header';
 const page = () => {
   return (
@@ -25,14 +26,14 @@ const page = () => {
               <div className='col-md-12'>
                 <div className='py-4'>
 
-                  <button className='sm:w-[155px]  w-full font-[rhd]  hover:bg-[#131F81] hover:text-[#fff] py-2 border text-[#131F81] text-[18px] rounded-[50px] bg-[#fff]'>Global Reach</button>
+                  <button className='sm:w-[155px]  w-full font-[rhd]  hover:bg-[#131F81] hover:text-[#fff] py-2 sm:border text-[#131F81] text-[18px] rounded-[50px] bg-[#fff]'>Global Reach</button>
                 </div>
                 <p className='sm:text-[50px] text-[30px] font-[600] text-[#fff] font-[lf] sm:leading-[55px] leading-[35px]'>Become a Seller and Start Earning Today!</p>
                 <p className='sm:text-[18px] text-[16px] font-[400] text-[#fff] font-[rhd]'>Are you ready to turn your passion into profit? Whether you&apos;re an artist, entrepreneur, or small business owner, our platform offers everything you need to grow your business and reach millions of customers worldwide.</p>
 
                 <div className='flex gap-5'>
-                  <button className='w-[155px] font-[rhd] hover:bg-[#131F81] hover:text-[#fff] h-[40px] border text-[#131F81] text-[18px] rounded-[10px] bg-[#fff]'>Get in Touch</button>
-                  <button className='w-[180px] font-[rhd] hover:bg-[#131F81] hover:text-[#fff] h-[40px] border text-[#131F81] text-[18px] rounded-[10px] bg-[#fff]'>Browse Services</button>
+                  <button className='w-[155px] font-[rhd] hover:bg-[#131F81] hover:text-[#fff] h-[40px] sm:border text-[#131F81] text-[18px] rounded-[10px] bg-[#fff]'>Get in Touch</button>
+                  <button className='w-[180px] font-[rhd] hover:bg-[#131F81] hover:text-[#fff] h-[40px] sm:border text-[#131F81] text-[18px] rounded-[10px] bg-[#fff]'>Browse Services</button>
                 </div>
               </div>
             </div>
@@ -62,7 +63,7 @@ const page = () => {
 
             <div className='col-md-12 flex justify-center'>
               <div className='col-md-8'>
-                <div className='col-md-12 pt-[70px] pb-4'>
+                <div className='col-md-12 pt-[70px] sm:pb-4'>
                   <div className='col-md-12 '>
                     <p className='text-[62px] font-[lf] font-[700] text-center'>Meet Our <span className='text-[#ff725e]'>Customers</span> </p>
                   </div>
@@ -78,8 +79,8 @@ const page = () => {
                   </div>
 
                 </div>
-                <div className='col-md-12 flex flex-wrap py-5'>
-                  <div className='col-md-3 py-5 px-5 flex justify-center border-r border-b'>
+                <div className='col-md-12 sm:flex flex-wrap py-5'>
+                  <div className='col-md-3 py-5 px-5 flex justify-center sm:border-r sm:border-b'>
                     <Image
                       src="/assets/images/image 3.svg"
                       alt='..'
@@ -88,7 +89,7 @@ const page = () => {
                       className=''
                     />
                   </div>
-                  <div className='col-md-3 py-5 px-5 flex justify-center border-r border-b'>
+                  <div className='col-md-3 py-5 px-5 flex justify-center sm:border-r sm:border-b'>
                     <Image
                       src="/assets/images/image 4.svg"
                       alt='..'
@@ -97,7 +98,7 @@ const page = () => {
                       className=''
                     />
                   </div>
-                  <div className='col-md-3 py-5 px-5 flex justify-center border-r border-b'>
+                  <div className='col-md-3 py-5 px-5 flex justify-center sm:border-r sm:border-b'>
                     <Image
                       src="/assets/images/image 5.svg"
                       alt='..'
@@ -106,7 +107,7 @@ const page = () => {
                       className=''
                     />
                   </div>
-                  <div className='col-md-3 py-5 px-5 flex justify-center border-b'>
+                  <div className='col-md-3 py-5 px-5 flex justify-center sm:border-b'>
                     <Image
                       src="/assets/images/image 6.svg"
                       alt='..'
@@ -115,7 +116,7 @@ const page = () => {
                       className=''
                     />
                   </div>
-                  <div className='col-md-3 py-5 px-5 flex justify-center border-r'>
+                  <div className='col-md-3 py-5 px-5 flex justify-center sm:border-r'>
                     <Image
                       src="/assets/images/image 7.svg"
                       alt='..'
@@ -124,7 +125,7 @@ const page = () => {
                       className=''
                     />
                   </div>
-                  <div className='col-md-3 py-5 px-5 flex justify-center border-r'>
+                  <div className='col-md-3 py-5 px-5 flex justify-center sm:border-r'>
                     <Image
                       src="/assets/images/image 8.svg"
                       alt='..'
@@ -133,7 +134,7 @@ const page = () => {
                       className=''
                     />
                   </div>
-                  <div className='col-md-3 py-5 px-5 flex justify-center border-r'>
+                  <div className='col-md-3 py-5 px-5 flex justify-center sm:border-r'>
                     <Image
                       src="/assets/images/image 9.svg"
                       alt='..'
@@ -159,11 +160,11 @@ const page = () => {
 
 
             <div className='col-md-12'>
-              <div className="row ">
-                <div className='col-md-12  mb-4 pt-[100px]'>
+              <div className="row">
+                <div className='col-md-12 sm:mb-4 sm:pt-[100px]'>
 
-                  <div className='col-md-12  pb-5'>
-                    <p className='text-[62px] font-[lf] font-[700] text-center'>What’s Coming <span className='text-[#FF6A00]'> Next?</span> </p>
+                  <div className='col-md-12 sm:pb-5'>
+                    <p className='sm:text-[62px] text-[40px] font-[lf] font-[700] text-center'>What’s Coming <span className='text-[#FF6A00]'> Next?</span> </p>
                   </div>
                 </div>
 
@@ -528,20 +529,25 @@ const page = () => {
                     <div className='col-md-9'>
                       <p className='text-[18px] font-[rhd] font-[700] text-[#000] p-0 m-0'>Rishabh</p>
                       <p className='text-[18px] font-[rhd] font-[400] text-[#000] p-0 m-0'>Long Time Customer</p>
-
                     </div>
-
                   </div>
                 </div>
               </div>
             </div>
-
-
-
           </div>
-
         </div>
+      </section>
 
+
+
+      <section>
+        <div className='container-fluid'>
+          <div className='row'>
+            <div className='col-md-12'>
+              <Footer/>
+            </div>
+          </div>
+        </div>
       </section>
 
 
