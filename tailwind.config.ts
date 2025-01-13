@@ -12,7 +12,34 @@ export default {
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
+      animation: {
+        marquee: "marquee 10s linear infinite",
+      },
+      keyframes: {
+        marquee: {
+          from: { transform: "translateX(0%)" },
+          to: { transform: "translateX(-100%)" },
+        },
+      },
     },
   },
   plugins: [],
 } satisfies Config;
+
+
+// module.exports = {
+//   theme: {
+//     extend: {
+//       animation: {
+//         marquee: "marquee 10s linear infinite",
+//       },
+//       keyframes: {
+//         marquee: {
+//           from: { transform: "translateX(0%)" },
+//           to: { transform: "translateX(-100%)" },
+//         },
+//       },
+//     },
+//   },
+//   plugins: [],
+// };
