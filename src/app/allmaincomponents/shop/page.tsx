@@ -55,7 +55,7 @@ const page = () => {
 
             <div className='col-md-12'>
               <div className="row">
-                <div className='col-md-12 sm:mb-4 sm:pt-[80px]'>
+                <div className='col-md-12 sm:mb-4 sm:pt-[60px]'>
 
                   <div className='col-md-12 sm:pb-5 py-5'>
                     <p className='sm:text-[62px] text-[40px] font-[lf] font-[700] text-center'>Exclusive Offers & <span className='text-[#FF6A00]'>Discounts</span> </p>
