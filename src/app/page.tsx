@@ -512,12 +512,11 @@ const page = () => {
                       <p className='text-[18px] font-[rhd] font-[400] text-[#000] p-0 m-0'>Long Time Customer</p>
 
                     </div>
-
                   </div>
                 </div>
 
                 <div className='col-md-12 bg-[#F6F6F6] rounded-[18px] px-[60px] py-[20px] mb-4'>
-                  <p className='text-[#000] text-[20px] py-[0px]'>  ★  ★  ★  ★  ★</p>
+                  <p className='text-[#000] text-[20px] py-[0px]'> ★  ★  ★  ★  ★ </p>
                   <p className='text-[18px] font-[rhd] font-[400] text-[#000]'>&quot;I’ve been using [Your Company Name]&apos;s products for years, and they never disappoint. If their future releases are anything like what they’ve teased, I can’t wait to try them!&quot;</p>
                   <div className='col-md-6 flex gap-2 items-center py-[20px]'>
                     <div className='col-md-3'>

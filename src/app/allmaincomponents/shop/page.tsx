@@ -17,38 +17,31 @@ const page = () => {
       </section>
 
 
-      <section className='overflow-hidden bg-[#131F81] sm:px-[80px] px-[20px]'>
+      <section className='overflow-hidden bg-[#eff0f3] sm:px-[80px] px-[20px]'>
         <div className='container-fluid'>
 
           <div className='row align-items-center'>
-            <div className='col-md-6 mb-4'>
+            <div className='col-md-6 mb-0 py-5'>
               <div className='col-md-12'>
-                <div className='py-4'>
+                
+                <p className='sm:text-[120px] font-[lf] text-[50px] font-[00] text-[#FF6A00] font-[lf] sm:leading-[115px] leading-[35px]'>Simple</p>
 
-                  <button className='sm:w-[155px]  w-full font-[rhd]  hover:bg-[#131F81] hover:text-[#fff] py-2 sm:border text-[#131F81] text-[18px] rounded-[50px] bg-[#fff]'>Global Reach</button>
-                </div>
-                <p className='sm:text-[50px] text-[30px] font-[600] text-[#fff] font-[lf] sm:leading-[55px] leading-[35px]'>Become a Seller and Start Earning Today!</p>
-                <p className='sm:text-[18px] text-[16px] font-[400] text-[#fff] font-[rhd]'>Are you ready to turn your passion into profit? Whether you&apos;re an artist, entrepreneur, or small business owner, our platform offers everything you need to grow your business and reach millions of customers worldwide.</p>
+                <p className='sm:text-[120px] font-[lf]  text-[50px] ml-[100px] font-[00] text-[#000] font-[lf] sm:leading-[115px] leading-[35px]'>Is More</p>
 
-                <div className='flex gap-5'>
-                  <button className='w-[155px] font-[rhd] hover:bg-[#131F81] hover:text-[#fff] h-[40px] sm:border text-[#131F81] text-[18px] rounded-[10px] bg-[#fff]'>Get in Touch</button>
-                  <button className='w-[180px] font-[rhd] hover:bg-[#131F81] hover:text-[#fff] h-[40px] sm:border text-[#131F81] text-[18px] rounded-[10px] bg-[#fff]'>Browse Services</button>
-                </div>
+               
               </div>
             </div>
-            <div className='col-md-6 mb-4'>
-              <div className='sm:flex sm:justify-end'>
+            <div className='col-md-6 mb-0'>
+              <div className='sm:flex sm:justify-end items-end'>
                 <div className="col-md-10">
                   <Image
-                    src="/assets/images/10307453_4435885 1.svg"
+                    src="/assets/images/107331 1.svg"
                     alt='...'
                     width={650}
                     height={10}
-                    className='w-full' />
+                    className='w-full'/>
                 </div>
-
               </div>
-
             </div>
           </div>
         </div>
@@ -64,7 +57,7 @@ const page = () => {
               <div className="row">
                 <div className='col-md-12 sm:mb-4 sm:pt-[100px]'>
 
-                  <div className='col-md-12 sm:pb-5'>
+                  <div className='col-md-12 sm:pb-5 py-5'>
                     <p className='sm:text-[62px] text-[40px] font-[lf] font-[700] text-center'>Exclusive Offers & <span className='text-[#FF6A00]'>Discounts</span> </p>
                   </div>
                 </div>
