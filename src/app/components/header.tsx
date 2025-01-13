@@ -221,9 +221,9 @@ const Header = () => {
                         <span className="text-[16px] font-[rhd] font-[400] text-gray-700 cursor-pointer">
                             Home
                         </span>
-                        <span className="text-[16px] font-[rhd] font-[400] text-gray-700 cursor-pointer">
-                            Shop
-                        </span>
+                        <Link href="/allmaincomponents/shop" className="no-underline">
+                                <span className="text-[16px] font-[rhd] font-[400] text-gray-700 cursor-pointer">Shop</span>
+                                </Link>
                         <span className="text-[16px] font-[rhd] font-[400] text-gray-700 cursor-pointer">
                             Contact
                         </span>
