@@ -23,7 +23,7 @@ export default function Footer() {
                                     <h2 className="ms-2 text-primary">Agile</h2>
                                 </div>
                                 <p className="text-[15px] font-[400] font-[rhd]">
-                                    "I've been using [Your Company Name]'s products for years, and they never disappoint. If their future releases are anything like what they've teased, I can’t wait to try them!"
+                                &quot;I&apos;ve been using [Your Company Name]&apos;s products for years, and they never disappoint. If their future releases are anything like what they&apos;ve teased, I can’t wait to try them!&quot;
                                 </p>
                                 <div className="d-flex gap-3 mt-4">
                                     <Link href="#" className="text-secondary">
