@@ -19,9 +19,10 @@ const Contact = () => {
 
                         <div className=" p-6">
                             {/* Main Content */}
-                            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-10">
+                            <div className="sm:flex mb-10">
                                 {/* Left Section: Contact Information and Header */}
-                                <div>
+                                <div className='col-md-6 flex'>
+                                    <div className='col-md-10'>
                                     {/* Header Content moved here */}
                                     <div className="mb-8">
                                         <h1 className="text-4xl font-bold text-orange-500">Contact Us</h1>
@@ -54,10 +55,14 @@ const Contact = () => {
                                             <p className="text-gray-600">Live Chat: Click on the chat icon at the bottom right to chat with a live agent now.</p>
                                         </div>
                                     </div>
+
+                                    </div>
                                 </div>
 
                                 {/* Right Section: Get In Touch Form */}
-                                <div className="bg-white drop-shadow-[0_4px_6px_rgba(225,225,225,1)] rounded-lg p-6">
+                                <div className='col-md-6 flex justify-end'>
+
+                                <div className="bg-white col-md-10 px-[40px] drop-shadow-[0_4px_6px_rgba(225,225,225,1)] rounded-lg p-6">
                                     <h2 className="text-2xl font-bold text-orange-500 mb-4">Get In Touch</h2>
                                     <p className="text-gray-600 mb-6">Fill out the form below, and a member of our team will get back to you shortly.</p>
 
@@ -100,6 +105,7 @@ const Contact = () => {
                                     <p className="mt-4 text-center text-gray-600">
                                         Thank you for reaching out to us! We value your feedback and look forward to assisting you.
                                     </p>
+                                </div>
                                 </div>
                             </div>
 
