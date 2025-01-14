@@ -178,7 +178,9 @@ const Header = () => {
                                     </>
                                 )}
                                 {isSearchFocused && (
+                                    <Link href="/" className="no-underline">
                                     <span className="text-[16px] font-[rhd] font-[400] text-gray-700 cursor-pointer">Home</span>
+                                </Link>
                                 )}
                             </div>
 
@@ -247,18 +249,18 @@ const Header = () => {
                     {isMenuOpen && (
                         <div className="md:hidden bg-white shadow-lg p-4">
                             <div className="flex flex-col space-y-4">
-                                <span className="text-[16px] font-[rhd] font-[400] text-gray-700 cursor-pointer">
-                                    Home
-                                </span>
+                            <Link href="/" className="no-underline">
+                                            <span className="text-[16px] font-[rhd] font-[400] text-gray-700 cursor-pointer">Home</span>
+                                        </Link>
                                 <Link href="/allmaincomponents/shop" className="no-underline">
                                     <span className="text-[16px] font-[rhd] font-[400] text-gray-700 cursor-pointer">Shop</span>
                                 </Link>
-                                <span className="text-[16px] font-[rhd] font-[400] text-gray-700 cursor-pointer">
-                                    Contact
-                                </span>
-                                <span className="text-[16px] font-[rhd] font-[400] text-gray-700 cursor-pointer">
-                                    Categories
-                                </span>
+                                <Link href="/allmaincomponents/contact" className="no-underline">
+                                            <span className="text-[16px] font-[rhd] font-[400] text-gray-700 cursor-pointer">Contact Us</span>
+                                        </Link>
+                                        <Link href="/allmaincomponents/about" className="no-underline">
+                                            <span className="text-[16px] font-[rhd] font-[400] text-gray-700 cursor-pointer">About Us</span>
+                                        </Link>
                                 <div className="flex gap-2 items-center">
                                     <Image
                                         src="/assets/images/Vector.svg"
