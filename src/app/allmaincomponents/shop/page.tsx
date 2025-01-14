@@ -8,13 +8,9 @@ const page = () => {
   return (
     <>
 
-      <section className='overflow-hidden'>
-        <div className='container-fluid'>
-          <div className='row'>
+    
             <Header />
-          </div>
-        </div>
-      </section>
+      
 
 
       <section className='overflow-hidden bg-[#eff0f3] sm:px-[80px] px-[20px]'>
@@ -55,14 +51,24 @@ const page = () => {
 
             <div className='col-md-12'>
               <div className="row">
-                <div className='col-md-12 sm:mb-4 sm:pt-[60px]'>
+                <div className='col-md-12 pt-[70px] sm:pb-4'>
+                                  <div className='col-md-12 '>
+                                    <p className='text-[62px] font-[lf] font-[700] text-center'>Exclusive Offers &<span className='text-[#FF6A00]'> Discounts</span> </p>
+                                  </div>
+                                  <div className='col-md-12 flex'>
+                                    <div className='col-md-8'></div>
+                                    <div className='col-md-4 p-0 m-0'>
+                                      <Image src="/assets/images/Group 10.svg"
+                                        alt='...'
+                                        width={216}
+                                        height={10} />
+                                    </div>
+                
+                                  </div>
+                
+                                </div>
 
-                  <div className='col-md-12 sm:pb-5 py-5'>
-                    <p className='sm:text-[62px] text-[40px] font-[lf] font-[700] text-center'>Exclusive Offers & <span className='text-[#FF6A00]'>Discounts</span> </p>
-                  </div>
-                </div>
-
-                <div className='col-md-12 mb-4'>
+                <div className='col-md-12 sm:pt-5 mb-4'>
                   <div className='row'>
                     <div className='col-md-3 mb-4'>
                       <div className='col-md-12 flex justify-center mb-4'>

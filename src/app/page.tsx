@@ -9,13 +9,10 @@ const page = () => {
   return (
     <>
 
-      <section className='overflow-hidden'>
-        <div className='container-fluid'>
-          <div className='row'>
-            <Header />
-          </div>
-        </div>
-      </section>
+     
+
+      <Header />
+
 
 
       <section className='overflow-hidden bg-[#131F81] sm:px-[80px] px-[20px]'>
@@ -422,7 +419,7 @@ const page = () => {
               <div className='col-md-10'>
 
 
-                <p className=' font-[rhd] font-[600] text-[24px] rounded-[50px]'>customers worldwide</p>
+                <p className=' font-[rhd] font-[600] text-[24px] '>customers worldwide</p>
 
                 <p className='sm:text-[57px] text-[28px] font-[600] font-[lf] sm:leading-[62px] leading-[33px]'>Ready to <span className='text-[#FF6A00]'>Get Started?</span></p>
                 <p className='sm:text-[18px] text-[16px] font-[400] font-[rhd]'>Sign up today and take the first step toward building your dream business. Your success story starts here!</p>
@@ -539,15 +536,8 @@ const page = () => {
 
 
 
-      <section>
-        <div className='container-fluid'>
-          <div className='row'>
-            <div className='col-md-12'>
-              <Footer/>
-            </div>
-          </div>
-        </div>
-      </section>
+      <Footer />
+
 
 
     </>
