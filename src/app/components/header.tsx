@@ -136,7 +136,9 @@ const Header = () => {
                     {/* Header Section */}
                     <div className="col-md-12  flex justify-between items-center">
                         {/* Logo */}
+                        
                         <div className="col-md-2 flex items-center">
+                        <Link href="/" className="no-underline">
                             <Image
                                 src="/assets/images/LOGO.svg"
                                 alt=".."
@@ -144,6 +146,7 @@ const Header = () => {
                                 height={20}
                                 className="py-3"
                             />
+                            </Link>
                         </div>
 
                         {/* Navigation Links - Hidden on Mobile */}
@@ -156,7 +159,10 @@ const Header = () => {
                             >
                                 {!isSearchFocused && (
                                     <>
-                                        <span className="text-[16px] font-[rhd] font-[400] text-gray-700 cursor-pointer">Home</span>
+
+                                        <Link href="/" className="no-underline">
+                                            <span className="text-[16px] font-[rhd] font-[400] text-gray-700 cursor-pointer">Home</span>
+                                        </Link>
 
                                         <Link href="/allmaincomponents/about" className="no-underline">
                                             <span className="text-[16px] font-[rhd] font-[400] text-gray-700 cursor-pointer">About Us</span>
@@ -166,7 +172,7 @@ const Header = () => {
                                             <span className="text-[16px] font-[rhd] font-[400] text-gray-700 cursor-pointer">Shop</span>
                                         </Link>
 
-                                        <Link href="/allmaincomponents/Contact" className="no-underline">
+                                        <Link href="/allmaincomponents/contact" className="no-underline">
                                             <span className="text-[16px] font-[rhd] font-[400] text-gray-700 cursor-pointer">Contact Us</span>
                                         </Link>
                                     </>

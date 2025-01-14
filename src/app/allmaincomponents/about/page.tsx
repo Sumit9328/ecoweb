@@ -209,13 +209,35 @@ const page = () => {
                         <div className='col-md-12'>
                             <div className='col-md-12 flex justify-center'>
                                 <div className='col-md-10'>
-                                    <div className='col-md-12'><p className='text-center'>our team</p></div>
-                                    <div className='sm:grid grid-cols-2 gap-5'>
-                                        <div className=' sm:flex justify-center'>
+                                    <div className='col-md-12 sm:pb-5'><p className='text-center text-[58px] font-[lf] font-[700]'>Our<span className='text-[#FF6A00]'>Team</span></p></div>
+                                    <div className='sm:grid grid-cols-2 gap-5 sm:pb-14'>
+                                        <div className='sm:flex justify-center'>
                                             <div className='col-md-4'>
                                                 <div>
                                                     <Image
                                                         src="/assets/images/Rectangle 62.svg"
+                                                        alt="..."
+                                                        width={650}
+                                                        height={10}
+                                                        className="w-full"
+                                                    />
+                                                </div>
+                                            </div>
+                                            <div className='col-md-8 flex justify-center items-center'>
+                                                <div className='col-md-10 px-4 py-3'>
+                                                    <p className='font-[lf] font-[600] text-[20px] leading-[25px]'>Abhishek Kumar</p>
+                                                    <p className='font-[lf] font-[400] text-[16px]'>Operations      Director</p>
+                                                    <p className='font-[rhd] font-[400] text-[16px]'>With over [X] years of experience in [industry], [Name] leads our company with a vision focused on quality, innovation, and customer satisfaction.</p>
+
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div className=' sm:flex justify-center'>
+                                            <div className='col-md-4'>
+                                                <div>
+                                                    <Image
+                                                        src="/assets/images/Rectangle 64.svg"
                                                         alt="..."
                                                         width={650}
                                                         height={10}
@@ -237,7 +259,7 @@ const page = () => {
                                             <div className='col-md-4'>
                                                 <div>
                                                     <Image
-                                                        src="/assets/images/Rectangle 62.svg"
+                                                        src="/assets/images/Rectangle 63.svg"
                                                         alt="..."
                                                         width={650}
                                                         height={10}
@@ -259,29 +281,7 @@ const page = () => {
                                             <div className='col-md-4'>
                                                 <div>
                                                     <Image
-                                                        src="/assets/images/Rectangle 62.svg"
-                                                        alt="..."
-                                                        width={650}
-                                                        height={10}
-                                                        className="w-full"
-                                                    />
-                                                </div>
-                                            </div>
-                                            <div className='col-md-8 flex justify-center items-center'>
-                                                <div className='col-md-10 px-4 py-3'>
-                                                    <p className='font-[lf] font-[600] text-[20px] leading-[25px]'>Abhishek Kumar</p>
-                                                    <p className='font-[lf] font-[400] text-[16px]'>Operations Director</p>
-                                                    <p className='font-[rhd] font-[400] text-[16px]'>With over [X] years of experience in [industry], [Name] leads our company with a vision focused on quality, innovation, and customer satisfaction.</p>
-
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <div className=' sm:flex justify-center'>
-                                            <div className='col-md-4'>
-                                                <div>
-                                                    <Image
-                                                        src="/assets/images/Rectangle 62.svg"
+                                                        src="/assets/images/Rectangle 65.svg"
                                                         alt="..."
                                                         width={650}
                                                         height={10}
